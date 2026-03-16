@@ -11,6 +11,19 @@ export const karnatakaColleges = {
         { name: "T John Group of Institutions", location: "Bannerghatta Road", type: "General" },
         { name: "Dr BR Ambedkar Medical College", location: "Kadugondanahalli", type: "Medical" },
         { name: "Harsha Group of Institutions", location: "Nelamangala", type: "General" }
+    ],
+    "Mysore": [
+        { name: "Maharaja's College", location: "Mysore", type: "General" },
+        { name: "Yuvaraja's College", location: "Mysore", type: "General" },
+        { name: "St. Philomena’s College", location: "Bannimantap", type: "General" },
+        { name: "JSS College of Arts, Commerce and Science", location: "Ooty Road", type: "General" },
+        { name: "Teresian College", location: "Siddhartha Layout", type: "General" },
+        { name: "The National Institute of Engineering", location: "Manandavadi Road", type: "Engineering" },
+        { name: "Sri Jayachamarajendra College of Engineering", location: "JSS TI Campus", type: "Engineering" }
+    ],
+    "Mangalore": [
+        { name: "Yenepoya (Deemed to be University)", location: "Mangalore Campus", type: "University" },
+        { name: "Yenepoya Institute of Technology", location: "Moodbidri", type: "Engineering" }
     ]
 };
 
@@ -45,7 +58,7 @@ export const keralaColleges = [
     { name: "KMCT Perinthalmanna", location: "Perinthalmanna", type: "Medical", brochureLink: "https://drive.google.com/drive/folders/1C3N7MA__QzHgliZUVlUiJmD5G68hKmxE?usp=sharing" },
     { name: "KMCT Vadakara", location: "Vadakara", type: "Medical" },
     { name: "KMCT Mukkam", location: "Mukkam", type: "Medical" },
-    { name: "KMCT Kasaragod", location: "Kasaragod", type: "Dental/Medical" },
+    { name: "KMCT Kasaragod", location: "Kasaragod", type: "Engineering/Management" },
     { name: "Ernadu Knowledge City Manjeri", location: "Manjeri", type: "Technical" },
     { name: "Al Ameen Engineering College Shornur", location: "Shornur", type: "Engineering" },
     { name: "Royal Engineering College Kunnamkulam", location: "Kunnamkulam", type: "Engineering" },

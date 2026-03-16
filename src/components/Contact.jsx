@@ -11,7 +11,6 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         alert("Thank you for your interest! We will contact you shortly.");
-        // Here you would integrate with backend or WhatsApp
     };
 
     const handleChange = (e) => {
@@ -20,92 +19,108 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="section contact-section" style={{ background: 'var(--bg-card)' }}>
+        <section id="contact" className="section" style={{
+            background: 'linear-gradient(0deg, var(--bg-dark) 0%, var(--bg-section-alt) 100%)',
+            position: 'relative'
+        }}>
             <div className="container">
-                <h2 className="section-title">Get In Touch</h2>
-                <span className="section-subtitle">Grow Your Admission Strategy With Us</span>
+                <span className="section-subtitle">Engage Us</span>
+                <h2 className="section-title">Initiate Partnership</h2>
 
                 <div className="contact-container" style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
                     gap: '60px',
                     marginTop: '60px',
-                    alignItems: 'start'
+                    alignItems: 'stretch'
                 }}>
+                    <div className="contact-info glass-card animate-fade-in-up delay-1" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <h3 style={{ fontSize: '1.8rem', fontFamily: 'var(--font-heading)', color: 'var(--accent-primary)', marginBottom: '30px' }}>Direct Access</h3>
 
-                    <div className="contact-info glass-card">
-                        <h3>Contact Information</h3>
-                        <div className="info-item" style={{ marginBottom: '20px' }}>
-                            <span className="icon">📞</span> +91 98765 43210
-                        </div>
-                        <div className="info-item" style={{ marginBottom: '20px' }}>
-                            <span className="icon">✉️</span> info@edumentor.com
-                        </div>
-                        <div className="info-item" style={{ marginBottom: '20px' }}>
-                            <span className="icon">📍</span> MG Road, Bangalore, Karnataka
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+                            <div className="info-item" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                                <span style={{ width: '50px', height: '50px', background: 'rgba(var(--accent-rgb), 0.1)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', border: '1px solid rgba(var(--accent-rgb), 0.3)' }}>📞</span>
+                                <div>
+                                    <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Phone Support</p>
+                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>+91 98765 43210</p>
+                                </div>
+                            </div>
+                            <div className="info-item" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                                <span style={{ width: '50px', height: '50px', background: 'rgba(var(--accent-rgb), 0.1)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', border: '1px solid rgba(var(--accent-rgb), 0.3)' }}>✉️</span>
+                                <div>
+                                    <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</p>
+                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>info@edumentor.com</p>
+                                </div>
+                            </div>
+                            <div className="info-item" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                                <span style={{ width: '50px', height: '50px', background: 'rgba(var(--accent-rgb), 0.1)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', border: '1px solid rgba(var(--accent-rgb), 0.3)' }}>📍</span>
+                                <div>
+                                    <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Headquarters</p>
+                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>MG Road, Bangalore</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <a href="https://wa.me/919876543210" target="_blank" className="whatsapp-btn btn-primary" style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '10px',
-                            marginTop: '30px',
-                            width: '100%',
-                            padding: '15px'
+                        <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="btn btn-primary" style={{
+                            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginTop: '50px', width: '100%'
                         }}>
-                            <span>💬</span> Chat on WhatsApp
+                            <span>💬</span> Message on WhatsApp
                         </a>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="contact-form glass-card">
-                        <h3 style={{ marginBottom: '30px' }}>Become a Partner Today</h3>
+                    <form onSubmit={handleSubmit} className="contact-form glass-card animate-fade-in-up delay-2" style={{ borderTop: '2px solid var(--accent-primary)' }}>
+                        <h3 style={{ fontSize: '1.5rem', fontFamily: 'var(--font-heading)', marginBottom: '40px', color: 'var(--text-main)' }}>Partner With Us</h3>
 
-                        <div className="form-group" style={{ marginBottom: '20px' }}>
-                            <label>Full Name</label>
+                        <div style={{ marginBottom: '25px' }}>
+                            <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>Full Executive Name</label>
                             <input
                                 type="text"
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
-                                style={{ width: '100%', padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: 'white', borderRadius: '8px' }}
+                                style={{ width: '100%', padding: '16px', background: 'var(--card-bg-subtle)', border: '1px solid var(--glass-border)', color: 'var(--text-main)', borderRadius: '4px', outline: 'none', transition: 'all 0.3s ease' }}
+                                onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-primary)'; e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
+                                onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--glass-border)'; e.currentTarget.style.background = 'rgba(255,255,255,0.02)'; }}
                             />
                         </div>
 
-                        <div className="form-group" style={{ marginBottom: '20px' }}>
-                            <label>Phone Number</label>
+                        <div style={{ marginBottom: '25px' }}>
+                            <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>Direct Line (Phone)</label>
                             <input
                                 type="tel"
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
                                 required
-                                style={{ width: '100%', padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: 'white', borderRadius: '8px' }}
+                                style={{ width: '100%', padding: '16px', background: 'var(--card-bg-subtle)', border: '1px solid var(--glass-border)', color: 'var(--text-main)', borderRadius: '4px', outline: 'none', transition: 'all 0.3s ease' }}
+                                onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-primary)'; e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; }}
+                                onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--glass-border)'; e.currentTarget.style.background = 'rgba(255,255,255,0.02)'; }}
                             />
                         </div>
 
-                        <div className="form-group" style={{ marginBottom: '20px' }}>
-                            <label>Intended Partnership Focus</label>
+                        <div style={{ marginBottom: '40px' }}>
+                            <label style={{ display: 'block', marginBottom: '8px', color: 'var(--text-muted)', fontSize: '0.9rem' }}>Area of Interest</label>
                             <select
                                 name="interest"
                                 value={formData.interest}
                                 onChange={handleChange}
-                                style={{ width: '100%', padding: '12px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--glass-border)', color: '#fff', borderRadius: '8px' }} // Adjusted color for dropdown options visibility
+                                style={{ width: '100%', padding: '16px', background: 'var(--card-bg-subtle)', border: '1px solid var(--glass-border)', color: 'var(--accent-primary)', borderRadius: '4px', outline: 'none', appearance: 'none', cursor: 'pointer', transition: 'all 0.3s ease' }}
+                                onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-primary)'; }}
+                                onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--glass-border)'; }}
                             >
-                                <option style={{ background: '#0B1120', color: '#fff' }} value="General Inquiry">General Inquiry</option>
-                                <option style={{ background: '#0B1120', color: '#fff' }} value="Engineering">Engineering</option>
-                                <option style={{ background: '#0B1120', color: '#fff' }} value="Medical">Medical</option>
-                                <option style={{ background: '#0B1120', color: '#fff' }} value="Nursing">Nursing</option>
-                                <option style={{ background: '#0B1120', color: '#fff' }} value="Management">Management</option>
+                                <option style={{ background: 'var(--bg-dark)', color: 'var(--text-main)' }} value="General Inquiry">General</option>
+                                <option style={{ background: 'var(--bg-dark)', color: 'var(--text-main)' }} value="Engineering">Engineering</option>
+                                <option style={{ background: 'var(--bg-dark)', color: 'var(--text-main)' }} value="Medical">Medical</option>
+                                <option style={{ background: 'var(--bg-dark)', color: 'var(--text-main)' }} value="Nursing">Nursing</option>
+                                <option style={{ background: 'var(--bg-dark)', color: 'var(--text-main)' }} value="Management">Management</option>
                             </select>
                         </div>
 
-                        <button type="submit" className="submit-btn btn-primary" style={{ width: '100%', padding: '15px', fontSize: '1.1rem' }}>
-                            Connect With Us
+                        <button type="submit" className="btn btn-outline" style={{ width: '100%', padding: '16px', fontSize: '1rem', letterSpacing: '2px' }}>
+                            Submit
                         </button>
                     </form>
-
                 </div>
             </div>
         </section>

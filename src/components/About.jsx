@@ -3,12 +3,16 @@ import aboutImage from '../assets/pranav1.jpeg';
 
 export default function About() {
     return (
-        <section id="about" className="about-section" style={{
-            padding: '80px 0',
-            background: 'var(--bg-card)'
+        <section id="about" className="section" style={{
+            position: 'relative'
         }}>
-            <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px', alignItems: 'center' }}>
-                <div className="about-image" style={{
+            <div className="container" style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                gap: '80px',
+                alignItems: 'center'
+            }}>
+                <div className="about-image animate-fade-in-up delay-1" style={{
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
@@ -16,16 +20,18 @@ export default function About() {
                 }}>
                     <div style={{
                         width: '100%',
-                        maxWidth: '350px',
+                        maxWidth: '400px',
                         aspectRatio: '1/1',
                         borderRadius: '50%',
                         overflow: 'hidden',
                         position: 'relative',
-                        boxShadow: '0 20px 50px rgba(0,0,0,0.5)'
+                        boxShadow: '0 30px 60px rgba(0,0,0,0.8)',
+                        border: '2px solid var(--accent-primary)',
+                        margin: '0 auto'
                     }}>
                         <img
                             src={aboutImage}
-                            alt="About Consultant"
+                            alt="Leadership"
                             style={{
                                 width: '145%',
                                 height: '145%',
@@ -33,46 +39,70 @@ export default function About() {
                                 position: 'absolute',
                                 left: '50%',
                                 top: '50%',
-                                transform: 'translate(-50%, -50%)'
+                                transform: 'translate(-50%, -50%)',
+                                filter: 'contrast(1.1)'
                             }}
                         />
                     </div>
                 </div>
 
-                <div className="about-content">
-                    <h2 className="section-title" style={{ textAlign: 'left' }}>Empowering Your Consultancy Business</h2>
-                    <span className="section-subtitle" style={{ textAlign: 'left', display: 'block', marginBottom: '20px' }}>Your B2B Partner for Guaranteed Admissions</span>
+                <div className="about-content animate-fade-in-up delay-2">
+                    <span className="section-subtitle" style={{ textAlign: 'left', marginBottom: '15px' }}>Strategic Alliance</span>
+                    <h2 className="section-title" style={{ textAlign: 'left', fontSize: '3rem', marginBottom: '30px', lineHeight: 1.1 }}>
+                        Empowering Your <br /><span style={{ fontStyle: 'italic', color: 'var(--accent-primary)' }}>Consultancy</span> Journey
+                    </h2>
 
-                    <blockquote style={{
-                        margin: '0 0 30px 0',
-                        padding: '15px 20px',
-                        borderLeft: '4px solid var(--accent-gold)',
-                        background: 'rgba(212, 175, 55, 0.05)',
-                        borderRadius: '0 8px 8px 0'
+                    <p style={{
+                        color: 'var(--text-muted)',
+                        fontSize: '1.1rem',
+                        lineHeight: 1.8,
+                        fontWeight: 300,
+                        marginBottom: '40px'
                     }}>
-                        <p style={{ margin: 0, color: 'var(--text-muted)', fontStyle: 'italic', fontSize: '1.1rem', lineHeight: '1.6' }}>
-                            "Our mission is to empower independent education consultants and agencies by providing unmatched access, transparent processes, and direct alliances with elite institutions. When you partner with us, you aren't just getting seats; you're gaining a strategic growth engine. Your network's success is our primary focus."
-                        </p>
-                    </blockquote>
+                        Our mission is to empower independent education consultants and agencies by providing unmatched access, transparent processes, and direct alliances with elite institutions. When you partner with us, you aren't just getting seats; you're gaining a strategic growth engine.
+                    </p>
 
-                    <ul style={{ listStyle: 'none', padding: 0, marginTop: '30px' }}>
-                        <li style={{ marginBottom: '15px', paddingLeft: '25px', position: 'relative' }}>
-                            <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>✓</span>
-                            Specialization in Medical & Engineering Admissions
-                        </li>
-                        <li style={{ marginBottom: '15px', paddingLeft: '25px', position: 'relative' }}>
-                            <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>✓</span>
-                            Transparent & Ethical Consulting Practices
-                        </li>
-                        <li style={{ marginBottom: '15px', paddingLeft: '25px', position: 'relative' }}>
-                            <span style={{ position: 'absolute', left: 0, color: 'var(--accent-gold)' }}>✓</span>
-                            Direct Partnerships with 50+ Top Colleges
-                        </li>
+                    <ul style={{ listStyle: 'none', padding: 0, marginTop: '30px', display: 'grid', gap: '25px' }}>
+                        {[
+                            'Specialization in Medical & Engineering Admissions',
+                            'Transparent & Ethical Consulting Practices',
+                            'Direct Partnerships with 50+ Top Colleges'
+                        ].map((text, i) => (
+                            <li key={i} style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '20px',
+                                background: 'var(--card-bg-subtle)',
+                                padding: '15px 25px',
+                                borderRadius: '8px',
+                                border: '1px solid var(--glass-border)',
+                                fontSize: '1.05rem',
+                                color: 'var(--text-main)',
+                                transition: 'all 0.3s ease'
+                            }} className="hover-list-item">
+                                <span style={{
+                                    color: 'var(--text-inverse)',
+                                    background: 'var(--accent-primary)',
+                                    width: '28px',
+                                    height: '28px',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    borderRadius: '50%',
+                                    fontSize: '0.8rem',
+                                    fontWeight: 'bold'
+                                }}>✓</span>
+                                {text}
+                            </li>
+                        ))}
                     </ul>
 
-                    <div className="signature" style={{ marginTop: '40px' }}>
-                        <p style={{ fontFamily: 'cursive', fontSize: '1.5rem', color: 'var(--accent-gold)' }}>Abhinav Consultant</p>
-                        <p className="role" style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Lead Strategic Partner</p>
+                    <div className="signature" style={{ marginTop: '50px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+                        <div style={{ width: '60px', height: '2px', background: 'var(--accent-primary)' }}></div>
+                        <div>
+                            <p style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: 'var(--accent-primary)', margin: 0 }}>Abhinav</p>
+                            <p className="role" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px', margin: 0 }}>Lead Strategy</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap');
 
 :root {
-    --bg-dark: #0B101B;
-    --bg-card: #151E2E;
-    --text-main: #F8FAFC;
-    --text-muted: #94A3B8;
-    --accent-gold: #D4AF37;
-    --accent-gold-hover: #F6CD4C;
-    --accent-blue: #3B82F6;
+    --bg-dark: #000000;
+    --bg-section-alt: #050505;
+    --text-main: #FAFAFA;
+    --text-inverse: #000000;
+    --text-muted: #888888;
 
-    --glass-bg: rgba(21, 30, 46, 0.7);
+    --accent-primary: #7928CA;
+    /* Deep Violet */
+    --accent-secondary: #FF0080;
+    /* Shocking Pink */
+    --accent-tertiary: #00E5FF;
+    /* Cyan */
+    --accent-rgb: 121, 40, 202;
+
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --card-bg-subtle: rgba(255, 255, 255, 0.02);
+    --bg-card-hover: rgba(255, 255, 255, 0.06);
+
+    --glass-bg: rgba(0, 0, 0, 0.2);
     --glass-border: rgba(255, 255, 255, 0.1);
+    --overlay-bg: rgba(0, 0, 0, 0.9);
+    --navbar-bg: rgba(0, 0, 0, 0.7);
 
-    --spacing-container: 1200px;
-    --font-main: 'Outfit', sans-serif;
+    --spacing-container: 1240px;
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Syne', sans-serif;
 }
 
 * {
@@ -32,6 +45,8 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -51,114 +66,147 @@ button {
     transition: all 0.3s ease;
 }
 
-/* Utilities */
 .container {
     max-width: var(--spacing-container);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5%;
+    position: relative;
+    z-index: 10;
 }
 
 .section {
-    padding: 80px 0;
+    padding: 120px 0;
+    position: relative;
+    background: transparent !important;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-main);
     text-align: center;
+    letter-spacing: -0.04em;
 }
 
 .section-subtitle {
-    color: var(--accent-gold);
+    color: var(--accent-tertiary);
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin-bottom: 2rem;
     display: block;
+    font-size: 0.85rem;
 }
 
+/* =========================================
+   HERO SPECIFIC BACKGROUND ANIMATION 
+========================================= */
+#home {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+/* 3D Liquid Orb handled in Hero.jsx via react-three-fiber */
+
+/* Sleek Minimal Buttons */
 .btn {
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
+    padding: 14px 34px;
+    border-radius: 8px;
+    /* Clean rounded rects */
+    font-weight: 500;
+    letter-spacing: 0px;
     display: inline-block;
     text-align: center;
+    font-size: 0.95rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--accent-gold), #B8860B);
-    color: #000;
+    background: var(--text-main);
+    color: var(--text-inverse);
+    border: 1px solid var(--text-main);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    background: transparent;
+    color: var(--text-main);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
 }
 
 .btn-outline {
-    border: 2px solid var(--accent-gold);
-    color: var(--accent-gold);
-    background: transparent;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
 }
 
 .btn-outline:hover {
-    background: rgba(212, 175, 55, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
 }
 
-/* Glassmorphism Card */
+/* Elevated Monolithic Cards */
 .glass-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--bg-card);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 2.5rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar */
 .navbar {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 92%;
-    max-width: 1200px;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
-    background: rgba(15, 23, 42, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 10px 30px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 50px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: transparent;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar.scrolled {
-    top: 15px;
-    background: rgba(15, 23, 42, 0.85);
-    border-color: rgba(212, 175, 55, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    padding: 8px 30px;
+    padding: 15px 0;
+    background: var(--navbar-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 800;
     color: var(--text-main);
+    letter-spacing: -0.05em;
 }
 
 .logo span {
-    color: var(--accent-gold);
+    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
@@ -169,42 +217,75 @@ button {
 
 .nav-links a {
     color: var(--text-muted);
+    font-size: 0.9rem;
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--accent-gold);
+    color: var(--text-main);
 }
 
 .mobile-menu-btn {
     display: none;
     color: var(--text-main);
     background: transparent;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-/* Mobile Styling */
-@media (max-width: 768px) {
+/* Inputs */
+input,
+select,
+textarea {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-main) !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    transition: border-color 0.3s ease !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--accent-tertiary) !important;
+    outline: none !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+select option {
+    background: #111 !important;
+    color: #FFF !important;
+}
+
+/* Hero Modifications for this specific layout */
+.cta-group {
+    margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
     .navbar {
-        width: 95%;
-        padding: 10px 20px;
+        padding: 20px 0;
     }
 
     .nav-links {
         display: none;
         position: absolute;
-        top: 120%;
+        top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(15, 23, 42, 0.98);
-        backdrop-filter: blur(10px);
-        border: 1px solid var(--glass-border);
-        border-radius: 20px;
+        background: #000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         flex-direction: column;
         padding: 2rem;
         text-align: center;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        gap: 1.5rem;
     }
 
     .nav-links.open {
@@ -215,28 +296,51 @@ button {
         display: block;
     }
 
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .hero-image {
-        display: none !important;
+    .nav-cta {
+        display: none;
     }
 }
 
 /* Animations */
-@keyframes fadeIn {
+@keyframes fadeScaleIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px) scale(0.98);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 }
 
-.animate-fade-in {
-    animation: fadeIn 0.8s ease forwards;
+.animate-fade-in-up {
+    animation: fadeScaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s;
+}
+
+.delay-3 {
+    animation-delay: 0.3s;
+}
+
+/* College specific to fix transparent background */
+.college-card {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.college-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
 }
