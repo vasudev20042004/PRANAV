@@ -86,8 +86,10 @@ export default function About() {
                                 <span style={{
                                     color: 'var(--text-inverse)',
                                     background: 'var(--accent-primary)',
+                                    minWidth: '28px',
                                     width: '28px',
                                     height: '28px',
+                                    flexShrink: 0,
                                     display: 'flex',
                                     justifyContent: 'center',
                                     alignItems: 'center',
