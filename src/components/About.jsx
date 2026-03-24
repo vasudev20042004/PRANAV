@@ -48,8 +48,8 @@ export default function About() {
 
                 <div className="about-content animate-fade-in-up delay-2">
                     <span className="section-subtitle" style={{ textAlign: 'left', marginBottom: '15px' }}>Strategic Alliance</span>
-                    <h2 className="section-title" style={{ textAlign: 'left', fontSize: '3rem', marginBottom: '30px', lineHeight: 1.1 }}>
-                        Empowering Your <br /><span style={{ fontStyle: 'italic', color: 'var(--accent-primary)' }}>Consultancy</span> Journey
+                    <h2 className="section-title" style={{ textAlign: 'left', fontSize: '2.5rem', marginBottom: '30px', lineHeight: 1.1 }}>
+                        Why Agents <br /><span style={{ fontStyle: 'italic', color: 'var(--accent-primary)' }}>Work With Us</span>
                     </h2>
 
                     <p style={{
@@ -62,11 +62,14 @@ export default function About() {
                         Our mission is to empower independent education consultants and agencies by providing unmatched access, transparent processes, and direct alliances with elite institutions. When you partner with us, you aren't just getting seats; you're gaining a strategic growth engine.
                     </p>
 
-                    <ul style={{ listStyle: 'none', padding: 0, marginTop: '30px', display: 'grid', gap: '25px' }}>
+                    <ul style={{ listStyle: 'none', padding: 0, marginTop: '30px', display: 'grid', gap: '20px' }}>
                         {[
-                            'Specialization in Medical & Engineering Admissions',
-                            'Transparent & Ethical Consulting Practices',
-                            'Direct Partnerships with 50+ Top Colleges'
+                            'Full Student Handling — No agent involvement after closure',
+                            '24–48 Hour Seat Confirmation',
+                            'Reliable Commission Payouts (7–15 Days)',
+                            'Direct College Coordination',
+                            'Smooth Admission to Joining Process',
+                            'Dedicated support for every confirmed admission'
                         ].map((text, i) => (
                             <li key={i} style={{
                                 display: 'flex',

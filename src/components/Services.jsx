@@ -2,29 +2,19 @@ import React from 'react';
 
 const services = [
     {
-        title: "University Affiliations",
-        icon: "🏛️",
-        description: "Direct tie-ups and priority access to top-tier colleges across Kerala, Karnataka, and Tamil Nadu."
+        title: "Full Student Handling",
+        icon: "🛡️",
+        description: "From admission to joining — we manage documentation, coordination, and onboarding. You don't deal with student issues. (Zero Agent Involvement)"
     },
     {
-        title: "Priority Processing",
+        title: "Fast & Priority Seat Confirmation",
         icon: "⚡",
-        description: "Fast-tracked application handling and dedicated backend support for hassle-free student placements."
+        description: "Confirmed admissions within 24–48 hours for eligible students through direct college coordination."
     },
     {
-        title: "Seat Blocking",
-        icon: "🔒",
-        description: "Reliable seat booking and transparent allotment processes to ensure your candidates are secured."
-    },
-    {
-        title: "B2B Commercials",
-        icon: "🤝",
-        description: "Highly competitive and reliable commission structures designed for our consultancy partners."
-    },
-    {
-        title: "Training & Resources",
-        icon: "📚",
-        description: "Continuous guidance, university brochures, and regular updates on course availability."
+        title: "Transparent & Timely Commission Payouts",
+        icon: "💸",
+        description: "Commission released within 7–15 days after fee clearance, with clear tracking and no hidden deductions."
     }
 ];
 
@@ -35,7 +25,7 @@ export default function Services() {
             position: 'relative'
         }}>
             <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                <span className="section-subtitle">Comprehensive Services</span>
+                <span className="section-subtitle">Fast Confirmations. Full Student Handling. Reliable Payments.</span>
                 <h2 className="section-title">Consulting Operations</h2>
 
                 <div className="services-grid" style={{

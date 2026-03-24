@@ -121,7 +121,7 @@ export default function Hero() {
                         lineHeight: 1.6,
                         textShadow: '0 5px 15px rgba(0,0,0,0.8)'
                     }}>
-                        Empowering consultancies with guaranteed placement pathways. Unlock top-tier medical and engineering institutions with transparent and priority support.
+                        We manage everything after your deal — so you can focus only on closing more students.
                     </p>
 
                     <div className="cta-group" style={{ display: 'flex', gap: '20px' }}>
@@ -129,6 +129,19 @@ export default function Hero() {
                         <a href="#colleges" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '10px', backdropFilter: 'blur(10px)' }}>
                             View Portfolio
                         </a>
+                    </div>
+
+                    <div style={{ marginTop: '40px', display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+                        {[
+                            "Direct tie-ups with top institutions",
+                            "Dedicated backend team",
+                            "100+ students handled annually"
+                        ].map((stat, i) => (
+                            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)' }}>
+                                <span style={{ color: '#00E5FF', fontSize: '1.2rem' }}>●</span>
+                                {stat}
+                            </div>
+                        ))}
                     </div>
                 </div>
 
