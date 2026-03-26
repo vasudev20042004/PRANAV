@@ -25,21 +25,23 @@ const CollegeModal = ({ college, onClose }) => {
                 <div className="modal-body" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <div style={{
                         display: 'flex',
+                        flexWrap: 'wrap',
                         justifyContent: 'space-between',
                         alignItems: 'center',
+                        gap: '20px',
                         background: 'var(--card-bg-subtle)',
                         padding: '30px',
                         borderRadius: '8px',
                         border: '1px solid var(--glass-border)'
                     }}>
-                        <div>
+                        <div style={{ flex: '1 1 min-content', minWidth: 'min(100%, 250px)' }}>
                             <h3 style={{ margin: '0 0 10px 0', fontSize: '1.4rem', fontFamily: 'var(--font-heading)', color: 'var(--text-main)' }}>Official Resources & Access</h3>
                             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-muted)', maxWidth: '400px' }}>Obtain detailed fee breakdown, official prospectus, and campus tour access.</p>
                         </div>
                         {college.feeStructureLink ? (
-                            <a href={college.feeStructureLink} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap' }}>View Fee Structure</a>
+                            <a href={college.feeStructureLink} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap', flex: '1 0 auto', textAlign: 'center' }}>View Fee Structure</a>
                         ) : (
-                            <a href="#contact" onClick={onClose} className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap' }}>View Fee Structure</a>
+                            <a href="#contact" onClick={onClose} className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap', flex: '1 0 auto', textAlign: 'center' }}>View Fee Structure</a>
                         )}
                     </div>
                 </div>

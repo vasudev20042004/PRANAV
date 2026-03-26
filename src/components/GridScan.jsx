@@ -423,7 +423,7 @@ export const GridScan = ({
 
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         rendererRef.current = renderer;
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+        renderer.setPixelRatio(1); // Hard capped to 1 to fix lag
         renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.outputColorSpace = THREE.SRGBColorSpace;
         renderer.toneMapping = THREE.NoToneMapping;

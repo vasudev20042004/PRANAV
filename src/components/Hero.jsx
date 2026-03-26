@@ -48,10 +48,10 @@ export default function Hero() {
                     gridScale={0.1}
                     scanColor="#7a94e1"
                     scanOpacity={0.4}
-                    enablePost
-                    bloomIntensity={0.6}
-                    chromaticAberration={0.002}
-                    noiseIntensity={0.01}
+                    enablePost={false}
+                    bloomIntensity={0.0}
+                    chromaticAberration={0.0}
+                    noiseIntensity={0}
                 />
             </div>
 
