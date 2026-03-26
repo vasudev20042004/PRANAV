@@ -54,20 +54,20 @@ export const tamilNaduColleges = {
 };
 
 export const keralaColleges = [
-    { name: "KMCT Kuttippuram", location: "Kuttippuram", type: "General", brochureLink: "https://drive.google.com/drive/folders/1l0B4arUuwWIYhwBJ8Z2Ma_fEIVIHCYAm?usp=sharing" },
-    { name: "KMCT Perinthalmanna", location: "Perinthalmanna", type: "Medical", brochureLink: "https://drive.google.com/drive/folders/1C3N7MA__QzHgliZUVlUiJmD5G68hKmxE?usp=sharing" },
-    { name: "KMCT Vadakara", location: "Vadakara", type: "Medical" },
-    { name: "KMCT Mukkam", location: "Mukkam", type: "Medical" },
-    { name: "KMCT Kasaragod", location: "Kasaragod", type: "Engineering/Management" },
+    { name: "KMCT Kuttippuram", location: "Kuttippuram", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1l0B4arUuwWIYhwBJ8Z2Ma_fEIVIHCYAm?usp=sharing" },
+    { name: "KMCT Perinthalmanna", location: "Perinthalmanna", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1C3N7MA__QzHgliZUVlUiJmD5G68hKmxE?usp=sharing" },
+    { name: "KMCT Vadakara", location: "Vadakara", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1nyRcjP5g2EfHeSbYMjOQD0EClyF9Yhym?usp=sharing" },
+    { name: "KMCT Mukkam", location: "Mukkam", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1pyUN-PwjvvGB2qtLd_Q6O7kK09WNwJpQ?usp=sharing" },
+    { name: "KMCT Kasaragod", location: "Kasaragod", type: "Engineering/Management", feeStructureLink: "https://drive.google.com/drive/folders/1f_kH3kXXABQj1EY0g3WlmXkqQvQMxbZz?usp=sharing" },
     { name: "Ernadu Knowledge City Manjeri", location: "Manjeri", type: "Technical" },
     { name: "Al Ameen Engineering College Shornur", location: "Shornur", type: "Engineering" },
-    { name: "Royal Engineering College Kunnamkulam", location: "Kunnamkulam", type: "Engineering" },
-    { name: "ELIMS College of Arts and Science Thrissur", location: "Thrissur", type: "Arts & Science" },
-    { name: "ICCS Engineering College Thrissur", location: "Thrissur", type: "Engineering" },
-    { name: "Jai Bharat Group of Institutions Perumbavoor", location: "Perumbavoor", type: "General" },
-    { name: "Yeldo Mar Baselios College Kothamangalam", location: "Kothamangalam", type: "Arts & Science" },
-    { name: "Al Azhar Group of Institutions Thodupuzha", location: "Thodupuzha", type: "General" },
-    { name: "MES Arts and Science College Ernakulam", location: "Ernakulam", type: "Arts & Science" },
+    { name: "Royal Engineering College Kunnamkulam", location: "Kunnamkulam", type: "Engineering", feeStructureLink: "https://drive.google.com/drive/folders/14rhaPR5IxDKC_imq_wp0UCP0MaS8p7BP?usp=sharing" },
+    { name: "ELIMS College of Arts and Science Thrissur", location: "Thrissur", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1IRCsdN_Zb-GLpD3BX9WXJsU9xoCQffuh?usp=sharing" },
+    { name: "ICCS Engineering College Thrissur", location: "Thrissur", type: "Engineering", feeStructureLink: "https://drive.google.com/drive/folders/1Ry6dFjXLdkLMwJfT_YfjTTYM3yolFng2?usp=sharing" },
+    { name: "Jai Bharat Group of Institutions Perumbavoor", location: "Perumbavoor", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1T1wcxZb9DobJB9RPyYqCQsIulbCQzeDj?usp=sharing" },
+    { name: "Yeldo Mar Baselios College Kothamangalam", location: "Kothamangalam", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1-TSUmArkkCWl7_Ueaa8syGjnnEqIRp-P?usp=sharing" },
+    { name: "Al Azhar Group of Institutions Thodupuzha", location: "Thodupuzha", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/188jdQAlUrbG5WFUzPuabLqQvL_97wSCB?usp=sharing" },
+    { name: "MES Arts and Science College Ernakulam", location: "Ernakulam", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1K2P7kdtA5vbbBCjdXV91iJcPgJQ943_P?usp=sharing" },
     { name: "MES Arts and Science College Erumeli", location: "Erumeli", type: "Arts & Science" },
-    { name: "MTM Arts and Science College Ponnani", location: "Ponnani", type: "Arts & Science" }
+    { name: "MTM Arts and Science College Ponnani", location: "Ponnani", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1TsErSfIDjfO2CzpNW1PuzC6wXKWDG2jR?usp=sharing" }
 ];

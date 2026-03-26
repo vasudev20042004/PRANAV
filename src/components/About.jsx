@@ -105,7 +105,7 @@ export default function About() {
                     <div className="signature" style={{ marginTop: '50px', display: 'flex', alignItems: 'center', gap: '20px' }}>
                         <div style={{ width: '60px', height: '2px', background: 'var(--accent-primary)' }}></div>
                         <div>
-                            <p style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: 'var(--accent-primary)', margin: 0 }}>Abhinav</p>
+                            <p style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: 'var(--accent-primary)', margin: 0 }}>Pranav Balan</p>
                             <p className="role" style={{ fontSize: '0.85rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '2px', margin: 0 }}>Lead Strategy</p>
                         </div>
                     </div>

@@ -36,7 +36,11 @@ const CollegeModal = ({ college, onClose }) => {
                             <h3 style={{ margin: '0 0 10px 0', fontSize: '1.4rem', fontFamily: 'var(--font-heading)', color: 'var(--text-main)' }}>Official Resources & Access</h3>
                             <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text-muted)', maxWidth: '400px' }}>Obtain detailed fee breakdown, official prospectus, and campus tour access.</p>
                         </div>
-                        <a href="#contact" onClick={onClose} className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap' }}>Request Info</a>
+                        {college.feeStructureLink ? (
+                            <a href={college.feeStructureLink} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap' }}>View Fee Structure</a>
+                        ) : (
+                            <a href="#contact" onClick={onClose} className="btn btn-primary" style={{ padding: '14px 28px', whiteSpace: 'nowrap' }}>View Fee Structure</a>
+                        )}
                     </div>
                 </div>
             </div>
@@ -205,6 +209,19 @@ export default function Colleges() {
 
                     {activeTab === 'karnataka' && <CityAccordion data={karnatakaColleges} searchTerm={searchTerm} expandedCity={expandedCity} toggleCity={toggleCity} onViewDetails={handleViewDetails} isMobile={isMobile} />}
                     {activeTab === 'tamilnadu' && <CityAccordion data={tamilNaduColleges} searchTerm={searchTerm} expandedCity={expandedCity} toggleCity={toggleCity} onViewDetails={handleViewDetails} isMobile={isMobile} />}
+                </div>
+
+                <div className="search-courses-container animate-fade-in-up" style={{ textAlign: 'center', marginTop: '60px', marginBottom: '20px' }}>
+                    <a href="https://drive.google.com/drive/folders/1MHA0xU3RZhmrQm3QqxYjzRzklKcLS6rD" target="_blank" rel="noreferrer" className="btn btn-primary" style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '10px',
+                        padding: '16px 36px',
+                        fontSize: '1.2rem',
+                        boxShadow: '0 10px 30px -10px var(--accent-primary)'
+                    }}>
+                        <span>🔍</span> Search By Courses
+                    </a>
                 </div>
             </div>
             <CollegeModal college={selectedCollege} onClose={handleCloseModal} />
