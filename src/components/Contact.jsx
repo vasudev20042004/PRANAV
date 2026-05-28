@@ -30,7 +30,7 @@ export default function Contact() {
                                 <span style={{ width: '50px', height: '50px', background: 'rgba(var(--accent-rgb), 0.1)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', border: '1px solid rgba(var(--accent-rgb), 0.3)' }}>📞</span>
                                 <div>
                                     <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Phone Support</p>
-                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>+91 98765 43210</p>
+                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>+91 85898 77876</p>
                                 </div>
                             </div>
                             <div className="info-item" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
@@ -49,7 +49,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="btn btn-primary" style={{
+                        <a href="https://wa.me/918589877876" target="_blank" rel="noreferrer" className="btn btn-primary" style={{
                             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginTop: '50px', width: '100%'
                         }}>
                             <span>💬</span> Message on WhatsApp

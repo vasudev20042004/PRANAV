@@ -1,16 +1,19 @@
 export const karnatakaColleges = {
     "Bangalore": [
-        { name: "HITA Education Institutions", location: "Nelamangala", type: "General" },
-        { name: "SB Group of Institutions", location: "Yelahanka New Town", type: "General" },
-        { name: "Brindhavan Group of Institutions", location: "Yelahanka", type: "Engineering/Management" },
-        { name: "Century College of Nursing", location: "Yelahanka", type: "Nursing" },
-        { name: "Dr. NB College of Nursing", location: "Yelahanka New Town", type: "Nursing" },
-        { name: "Akash Medical College", location: "Devanahalli", type: "Medical" },
-        { name: "Acharya Group of Institutions", location: "Soladevanahalli", type: "General" },
-        { name: "Krupanidhi Group of Institutions", location: "Carmelaram", type: "General" },
-        { name: "T John Group of Institutions", location: "Bannerghatta Road", type: "General" },
-        { name: "Dr BR Ambedkar Medical College", location: "Kadugondanahalli", type: "Medical" },
-        { name: "Harsha Group of Institutions", location: "Nelamangala", type: "General" }
+        { name: "HITA Education Institutions", location: "Nelamangala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1aRtc_CgeBbiSzMMbBDErTl_QEhrxrPUf?usp=sharing" },
+        { name: "SB Group of Institutions", location: "Yelahanka New Town", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1ynYGbrwCTk-Z7JGpqOkQeyUz_s0DTqH_?usp=sharing" },
+        { name: "Brindhavan Group of Institutions", location: "Yelahanka", type: "Engineering/Management", feeStructureLink: "https://drive.google.com/drive/folders/1LfYit0KE16WOGLM9fhMlfY5ddFUX8W-X?usp=sharing" },
+        { name: "Century College of Nursing", location: "Yelahanka", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1a5pDTzXCbwaYEn2HmiBlkF6yxU6xvRlF?usp=sharing" },
+        { name: "Dr. NB College of Nursing", location: "Yelahanka New Town", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1yXWiI7Xa1HxqaoTZsFzHEjOwjN0YzH9_?usp=sharing" },
+        { name: "Akash Medical College", location: "Devanahalli", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1obuo2vRC1OHGLjYu7WsAvX_uPlahdnnr?usp=sharing" },
+        { name: "Acharya Group of Institutions", location: "Soladevanahalli", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1a7fvgWcWVzZ71mKzG-bXc8hYlg6X98rO?usp=sharing" },
+        { name: "Krupanidhi Group of Institutions", location: "Carmelaram", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GaWAxuCWPThTP1Pcaab4F6Fn5okMCTLr?usp=sharing" },
+        { name: "T John Group of Institutions", location: "Bannerghatta Road", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1fS9FrTEOzZlUqpMrINY0VBGUo290rlq9?usp=sharing" },
+        { name: "Dr BR Ambedkar Medical College", location: "Kadugondanahalli", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1VIfUY6_KgyvY4R5q9l0hVsUhTVBG9_Hq?usp=sharing" },
+        { name: "Harsha Group of Institutions", location: "Nelamangala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1KExYzA7sLh00dZ4yVQFq5KxKDsRGDllQ?usp=sharing" },
+        { name: "Smt. Lakshmidevi Group of Institutions", location: "Avalahalli", type: "Nursing" },
+        { name: "Siddaganga Group of Institutions", location: "Laggere", type: "Nursing/Paramedical" },
+        { name: "Mathrushree Group of Institutions", location: "Nelamangala", type: "Nursing/Paramedical" }
     ],
     "Mysore": [
         { name: "Maharaja's College", location: "Mysore", type: "General" },
@@ -69,5 +72,6 @@ export const keralaColleges = [
     { name: "Al Azhar Group of Institutions Thodupuzha", location: "Thodupuzha", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/188jdQAlUrbG5WFUzPuabLqQvL_97wSCB?usp=sharing" },
     { name: "MES Arts and Science College Ernakulam", location: "Ernakulam", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1K2P7kdtA5vbbBCjdXV91iJcPgJQ943_P?usp=sharing" },
     { name: "MES Arts and Science College Erumeli", location: "Erumeli", type: "Arts & Science" },
-    { name: "MTM Arts and Science College Ponnani", location: "Ponnani", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1TsErSfIDjfO2CzpNW1PuzC6wXKWDG2jR?usp=sharing" }
+    { name: "MTM Arts and Science College Ponnani", location: "Ponnani", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1TsErSfIDjfO2CzpNW1PuzC6wXKWDG2jR?usp=sharing" },
+    { name: "KMM College of Arts and Science", location: "Edappally", type: "Arts & Science" }
 ];
