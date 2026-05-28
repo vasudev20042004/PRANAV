@@ -134,6 +134,7 @@ export default function Colleges() {
     const [selectedCollege, setSelectedCollege] = useState(null);
     const [isMobile, setIsMobile] = useState(false);
     const [showAllKerala, setShowAllKerala] = useState(false);
+    const [showAllTamilNadu, setShowAllTamilNadu] = useState(false);
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -145,6 +146,7 @@ export default function Colleges() {
     const handleTabChange = (tab) => {
         setActiveTab(tab);
         setShowAllKerala(false); // Reset specific states when switching tabs
+        setShowAllTamilNadu(false);
         setExpandedCity(null);
     };
 
@@ -166,6 +168,13 @@ export default function Colleges() {
 
     const limitKerala = (isMobile && !showAllKerala && !searchTerm) ? 4 : filteredKerala.length;
     const visibleKerala = filteredKerala.slice(0, limitKerala);
+
+    const filteredTamilNadu = tamilNaduColleges.filter(c =>
+        c.name.toLowerCase().includes(searchTerm.toLowerCase()) || c.location.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    const limitTamilNadu = (isMobile && !showAllTamilNadu && !searchTerm) ? 4 : filteredTamilNadu.length;
+    const visibleTamilNadu = filteredTamilNadu.slice(0, limitTamilNadu);
 
     return (
         <section id="colleges" className="colleges-section">
@@ -210,7 +219,24 @@ export default function Colleges() {
                     )}
 
                     {activeTab === 'karnataka' && <CityAccordion data={karnatakaColleges} searchTerm={searchTerm} expandedCity={expandedCity} toggleCity={toggleCity} onViewDetails={handleViewDetails} isMobile={isMobile} />}
-                    {activeTab === 'tamilnadu' && <CityAccordion data={tamilNaduColleges} searchTerm={searchTerm} expandedCity={expandedCity} toggleCity={toggleCity} onViewDetails={handleViewDetails} isMobile={isMobile} />}
+                    {activeTab === 'tamilnadu' && (
+                        <div>
+                            <div className="college-list">
+                                {visibleTamilNadu.length > 0 ? (
+                                    visibleTamilNadu.map((college, idx) => <CollegeCard key={idx} college={college} onViewDetails={handleViewDetails} />)
+                                ) : (
+                                    <p style={{ color: 'var(--text-muted)', textAlign: 'center', width: '100%', padding: '40px' }}>No institutions found matching "{searchTerm}"</p>
+                                )}
+                            </div>
+                            {isMobile && !showAllTamilNadu && !searchTerm && filteredTamilNadu.length > 4 && (
+                                <div style={{ textAlign: 'center', marginTop: '30px' }}>
+                                    <button className="btn btn-outline" style={{ fontSize: '0.8rem', padding: '10px 24px' }} onClick={() => setShowAllTamilNadu(true)}>
+                                        View More
+                                    </button>
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
 
                 <div className="search-courses-container animate-fade-in-up" style={{ textAlign: 'center', marginTop: '60px', marginBottom: '20px' }}>
