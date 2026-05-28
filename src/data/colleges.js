@@ -1,32 +1,32 @@
 export const karnatakaColleges = {
     "Bangalore": [
-        { name: "HITA Education Institutions", location: "Nelamangala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1aRtc_CgeBbiSzMMbBDErTl_QEhrxrPUf?usp=sharing" },
-        { name: "SB Group of Institutions", location: "Yelahanka New Town", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1ynYGbrwCTk-Z7JGpqOkQeyUz_s0DTqH_?usp=sharing" },
-        { name: "Brindhavan Group of Institutions", location: "Yelahanka", type: "Engineering/Management", feeStructureLink: "https://drive.google.com/drive/folders/1LfYit0KE16WOGLM9fhMlfY5ddFUX8W-X?usp=sharing" },
-        { name: "Century College of Nursing", location: "Yelahanka", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1a5pDTzXCbwaYEn2HmiBlkF6yxU6xvRlF?usp=sharing" },
-        { name: "Dr. NB College of Nursing", location: "Yelahanka New Town", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1yXWiI7Xa1HxqaoTZsFzHEjOwjN0YzH9_?usp=sharing" },
-        { name: "Akash Medical College", location: "Devanahalli", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1obuo2vRC1OHGLjYu7WsAvX_uPlahdnnr?usp=sharing" },
-        { name: "Acharya Group of Institutions", location: "Soladevanahalli", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1a7fvgWcWVzZ71mKzG-bXc8hYlg6X98rO?usp=sharing" },
-        { name: "Krupanidhi Group of Institutions", location: "Carmelaram", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GaWAxuCWPThTP1Pcaab4F6Fn5okMCTLr?usp=sharing" },
-        { name: "T John Group of Institutions", location: "Bannerghatta Road", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1fS9FrTEOzZlUqpMrINY0VBGUo290rlq9?usp=sharing" },
-        { name: "Dr BR Ambedkar Medical College", location: "Kadugondanahalli", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1VIfUY6_KgyvY4R5q9l0hVsUhTVBG9_Hq?usp=sharing" },
-        { name: "Harsha Group of Institutions", location: "Nelamangala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1KExYzA7sLh00dZ4yVQFq5KxKDsRGDllQ?usp=sharing" },
-        { name: "Smt. Lakshmidevi Group of Institutions", location: "Avalahalli", type: "Nursing" },
-        { name: "Siddaganga Group of Institutions", location: "Laggere", type: "Nursing/Paramedical" },
-        { name: "Mathrushree Group of Institutions", location: "Nelamangala", type: "Nursing/Paramedical" }
+        { name: "HITA Education Institutions", location: "Nelamangala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "SB Group of Institutions", location: "Yelahanka New Town", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Brindhavan Group of Institutions", location: "Yelahanka", type: "Engineering/Management", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Century College of Nursing", location: "Yelahanka", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Dr. NB College of Nursing", location: "Yelahanka New Town", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Akash Medical College", location: "Devanahalli", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Acharya Group of Institutions", location: "Soladevanahalli", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Krupanidhi Group of Institutions", location: "Carmelaram", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "T John Group of Institutions", location: "Bannerghatta Road", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Dr BR Ambedkar Medical College", location: "Kadugondanahalli", type: "Medical", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Harsha Group of Institutions", location: "Nelamangala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Smt. Lakshmidevi Group of Institutions", location: "Avalahalli", type: "Nursing", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Siddaganga Group of Institutions", location: "Laggere", type: "Nursing/Paramedical", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Mathrushree Group of Institutions", location: "Nelamangala", type: "Nursing/Paramedical", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" }
     ],
     "Mysore": [
-        { name: "Maharaja's College", location: "Mysore", type: "General" },
-        { name: "Yuvaraja's College", location: "Mysore", type: "General" },
-        { name: "St. Philomena’s College", location: "Bannimantap", type: "General" },
-        { name: "JSS College of Arts, Commerce and Science", location: "Ooty Road", type: "General" },
-        { name: "Teresian College", location: "Siddhartha Layout", type: "General" },
-        { name: "The National Institute of Engineering", location: "Manandavadi Road", type: "Engineering" },
-        { name: "Sri Jayachamarajendra College of Engineering", location: "JSS TI Campus", type: "Engineering" }
+        { name: "Maharaja's College", location: "Mysore", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Yuvaraja's College", location: "Mysore", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "St. Philomena’s College", location: "Bannimantap", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "JSS College of Arts, Commerce and Science", location: "Ooty Road", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Teresian College", location: "Siddhartha Layout", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "The National Institute of Engineering", location: "Manandavadi Road", type: "Engineering", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Sri Jayachamarajendra College of Engineering", location: "JSS TI Campus", type: "Engineering", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" }
     ],
     "Mangalore": [
-        { name: "Yenepoya (Deemed to be University)", location: "Mangalore Campus", type: "University" },
-        { name: "Yenepoya Institute of Technology", location: "Moodbidri", type: "Engineering" }
+        { name: "Yenepoya (Deemed to be University)", location: "Mangalore Campus", type: "University", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" },
+        { name: "Yenepoya Institute of Technology", location: "Moodbidri", type: "Engineering", feeStructureLink: "https://drive.google.com/drive/folders/1GYGGBpbvX6qb0YXu7ukpROjY-izfM_b4?usp=sharing" }
     ]
 };
 
