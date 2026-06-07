@@ -37,14 +37,14 @@ export default function Contact() {
                                 <span style={{ width: '50px', height: '50px', background: 'rgba(var(--accent-rgb), 0.1)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', border: '1px solid rgba(var(--accent-rgb), 0.3)' }}>✉️</span>
                                 <div>
                                     <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Email</p>
-                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>info@edumentor.com</p>
+                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>felcaeducationist@gmail.com</p>
                                 </div>
                             </div>
                             <div className="info-item" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                                 <span style={{ width: '50px', height: '50px', background: 'rgba(var(--accent-rgb), 0.1)', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.2rem', border: '1px solid rgba(var(--accent-rgb), 0.3)' }}>📍</span>
                                 <div>
                                     <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Headquarters</p>
-                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>MG Road, Bangalore</p>
+                                    <p style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-main)' }}>Yelahanka, New Town</p>
                                 </div>
                             </div>
                         </div>

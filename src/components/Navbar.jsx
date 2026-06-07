@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import logoImg from '../assets/logoo.png';
 
-export default function Navbar() {
+export default function Navbar({ isLoading }) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -16,7 +18,17 @@ export default function Navbar() {
 
                 {/* Left side: Logo + Links */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
-                    <a href="#" className="logo">Edu<span style={{ fontWeight: 400 }}>Mentor</span></a>
+                    <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', minWidth: '150px', minHeight: '80px' }}>
+                        {!isLoading && (
+                            <motion.img
+                                layoutId="main-logo"
+                                src={logoImg}
+                                alt="EduMentor"
+                                style={{ height: '80px', width: 'auto', objectFit: 'contain' }}
+                                transition={{ type: 'spring', stiffness: 60, damping: 15 }}
+                            />
+                        )}
+                    </a>
 
                     <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                         <a href="#home" onClick={() => setIsOpen(false)}>Home</a>

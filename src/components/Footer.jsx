@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImg from '../assets/logoo.png';
 
 export default function Footer() {
     return (
@@ -15,7 +16,9 @@ export default function Footer() {
                 marginBottom: '60px'
             }}>
                 <div className="footer-about">
-                    <a href="#" className="logo" style={{ display: 'inline-block', marginBottom: '20px' }}>Edu<span style={{ fontWeight: 400 }}>Mentor</span></a>
+                    <a href="#" className="logo" style={{ display: 'inline-block', marginBottom: '20px' }}>
+                        <img src={logoImg} alt="EduMentor" style={{ height: '95px', width: 'auto', objectFit: 'contain' }} />
+                    </a>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', maxWidth: '350px', lineHeight: 1.8 }}>
                         Empowering educational consultants and partners with exclusive B2B alliances and priority placement pathways since 2012.
                     </p>
