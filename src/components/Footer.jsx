@@ -11,7 +11,7 @@ export default function Footer() {
         }}>
             <div className="container" style={{
                 display: 'grid',
-                gridTemplateColumns: '2fr 1fr 1fr',
+                gridTemplateColumns: '2fr 1fr',
                 gap: '60px',
                 marginBottom: '60px'
             }}>
@@ -31,15 +31,6 @@ export default function Footer() {
                         <li><a href="#about" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }} onMouseOver={e => e.target.style.color = 'var(--accent-primary)'} onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>About</a></li>
                         <li><a href="#services" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }} onMouseOver={e => e.target.style.color = 'var(--accent-primary)'} onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>Services</a></li>
                         <li><a href="#colleges" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }} onMouseOver={e => e.target.style.color = 'var(--accent-primary)'} onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>Colleges</a></li>
-                    </ul>
-                </div>
-
-                <div className="footer-contact" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <h4 style={{ color: 'var(--text-main)', fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '2px' }}>Social Matrix</h4>
-                    <ul style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                        <li><a href="https://linkedin.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }} onMouseOver={e => e.target.style.color = 'var(--accent-primary)'} onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>LinkedIn Nexus</a></li>
-                        <li><a href="https://instagram.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }} onMouseOver={e => e.target.style.color = 'var(--accent-primary)'} onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>Instagram Studio</a></li>
-                        <li><a href="https://facebook.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }} onMouseOver={e => e.target.style.color = 'var(--accent-primary)'} onMouseOut={e => e.target.style.color = 'var(--text-muted)'}>Facebook Network</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,11 +55,11 @@ export default function Footer() {
             <style>{`
                 @media (max-width: 768px) {
                     footer .container {
-                        grid-template-columns: 1fr !important;
-                        text-align: center;
+                         grid-template-columns: 1fr !important;
+                         text-align: center;
                     }
-                    footer .footer-links ul, footer .footer-contact ul {
-                        align-items: center;
+                    footer .footer-links ul {
+                         align-items: center;
                     }
                 }
             `}</style>

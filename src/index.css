@@ -274,6 +274,10 @@ select option {
         padding: 20px 0;
     }
 
+    .logo {
+        justify-content: center !important;
+    }
+
     .nav-links {
         display: none;
         position: absolute;

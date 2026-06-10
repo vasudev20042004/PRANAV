@@ -18,7 +18,7 @@ export default function Navbar({ isLoading }) {
 
                 {/* Left side: Logo + Links */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '3rem' }}>
-                    <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', minWidth: '150px', minHeight: '80px' }}>
+                    <a href="#" className="logo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', minWidth: '150px', minHeight: '80px' }}>
                         {!isLoading && (
                             <motion.img
                                 layoutId="main-logo"

@@ -57,5 +57,10 @@ export const keralaColleges = [
     { name: "MES Arts and Science College Ernakulam", location: "Ernakulam", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
     { name: "MES Arts and Science College Erumeli", location: "Erumeli", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
     { name: "MTM Arts and Science College Ponnani", location: "Ponnani", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
-    { name: "KMM College of Arts and Science", location: "Edappally", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" }
+    { name: "KMM College of Arts and Science", location: "Edappally", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
+    { name: "Ideal Arts and Science College", location: "Cherpulassery", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
+    { name: "Don Bosco College", location: "Mukkam", type: "Arts & Science", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
+    { name: "Ilahia Group of Institutions", location: "Muvattupuzha", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
+    { name: "MET'S Group of Institutions", location: "Thrissur", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" },
+    { name: "Naipunnya College", location: "Cherthala", type: "General", feeStructureLink: "https://drive.google.com/drive/folders/1suKCisleyuaVWl2YZdoAwGcrwShANFEh?usp=sharing" }
 ];
